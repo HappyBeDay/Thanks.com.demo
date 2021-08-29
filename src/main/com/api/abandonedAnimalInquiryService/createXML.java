@@ -19,7 +19,7 @@ public class createXML {
 
 	public createXML(StringBuilder sb) {
 		try {
-			bs = new BufferedOutputStream(new FileOutputStream("abandonedAnimalInquiryService.xml"));
+			bs = new BufferedOutputStream(new FileOutputStream("xml/abandonedAnimalInquiryService.xml"));
 			String str = sb.toString();
 			bs.write(str.getBytes()); // Byte형으로만 넣을 수 있음
 		} catch (Exception e) {
