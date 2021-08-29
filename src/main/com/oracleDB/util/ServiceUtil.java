@@ -1,4 +1,4 @@
-package main.java.com.database.util;
+package main.com.oracleDB.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

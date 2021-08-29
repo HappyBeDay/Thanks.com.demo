@@ -1,4 +1,4 @@
-package main.java.com.database.sample;
+package main.com.oracleDB.sample;
 
 public class jdbcEx001 {
 	public static void main(String[] args) {
