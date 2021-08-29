@@ -1,11 +1,12 @@
 package main.com.api.abandonedAnimalInquiryService;
 
-import java.io.BufferedOutputStream;
+import java.io.BufferedWriter;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 
 public class createXML {
-	BufferedOutputStream bs = null;
+	BufferedWriter bs = null;
 
 	private void close() {
 		try {
@@ -19,9 +20,9 @@ public class createXML {
 
 	public createXML(StringBuilder sb) {
 		try {
-			bs = new BufferedOutputStream(new FileOutputStream("xml/abandonedAnimalInquiryService.xml"));
+			bs = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("docs/xml/abandonedAnimalInquiryService.xml"), "UTF-8"));
 			String str = sb.toString();
-			bs.write(str.getBytes()); // Byte형으로만 넣을 수 있음
+			bs.write(str); // Byte형으로만 넣을 수 있음
 		} catch (Exception e) {
 			e.getStackTrace();
 		} finally {
