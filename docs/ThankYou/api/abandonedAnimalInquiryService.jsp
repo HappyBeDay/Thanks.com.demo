@@ -9,7 +9,7 @@
 </script>
 </head>
 <body>
-	<input type="button" value="abandonedAnimalInquiryService"
+	<input type="button" value="abandonedAnimalInquiryService.xml"
 		onclick="load(this)">
 	<img alt="" src="/Thanks.com/ThankYou/img/model/Cherry11.png">
 </body>

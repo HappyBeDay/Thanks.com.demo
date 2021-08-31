@@ -85,9 +85,9 @@ function load(obj) {
 	httpRequest = getXmlHttpRequest();
 	
 	url = "/Thanks.com/xml/";
-	
+	var xmlFileName = obj.value;
 	
 	httpRequest.onreadystatechange = view; // callback function is "view"
-	httpRequest.open('GET', 'twitter.xml', true);
+	httpRequest.open('GET', url+xmlFileName, true);
 	httpRequest.send(null);
 }
