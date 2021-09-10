@@ -1,0 +1,257 @@
+<application xmlns="http://wadl.dev.java.net/2009/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<grammars>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified">
+<xs:element name="GetAbandonmentPublicListVO" type="getAbandonmentPublicListVO"/>
+<xs:element name="GetKindVO" type="getKindVO"/>
+<xs:element name="GetShelterVO" type="getShelterVO"/>
+<xs:element name="GetSidoVO" type="getSidoVO"/>
+<xs:element name="GetSigunguVO" type="getSigunguVO"/>
+<xs:element name="header" nillable="true" type="xs:anyType"/>
+<xs:element name="response" nillable="true" type="xs:anyType"/>
+<xs:complexType name="getSigunguResponse">
+<xs:sequence>
+<xs:element minOccurs="0" ref="header"/>
+<xs:element minOccurs="0" name="body" type="getSigunguBody"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getSigunguHeader">
+<xs:sequence>
+<xs:element minOccurs="0" name="resultCode" type="xs:string"/>
+<xs:element minOccurs="0" name="resultMsg" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getSigunguBody">
+<xs:sequence>
+<xs:element minOccurs="0" name="items">
+<xs:complexType>
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="item" type="getSigunguVO"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getSigunguVO">
+<xs:sequence>
+<xs:element minOccurs="0" name="orgCd" type="xs:string"/>
+<xs:element minOccurs="0" name="orgdownNm" type="xs:string"/>
+<xs:element minOccurs="0" name="uprCd" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAbandonmentPublicListResponse">
+<xs:sequence>
+<xs:element minOccurs="0" ref="header"/>
+<xs:element minOccurs="0" name="body" type="getAbandonmentPublicListBody"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAbandonmentPublicListHeader">
+<xs:sequence>
+<xs:element minOccurs="0" name="resultCode" type="xs:string"/>
+<xs:element minOccurs="0" name="resultMsg" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAbandonmentPublicListBody">
+<xs:sequence>
+<xs:element minOccurs="0" name="items">
+<xs:complexType>
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="item" type="getAbandonmentPublicListVO"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element minOccurs="0" name="numOfRows" type="xs:int"/>
+<xs:element minOccurs="0" name="pageNo" type="xs:int"/>
+<xs:element minOccurs="0" name="totalCount" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAbandonmentPublicListVO">
+<xs:sequence>
+<xs:element minOccurs="0" name="age" type="xs:string"/>
+<xs:element minOccurs="0" name="careAddr" type="xs:string"/>
+<xs:element minOccurs="0" name="careNm" type="xs:string"/>
+<xs:element minOccurs="0" name="careTel" type="xs:string"/>
+<xs:element minOccurs="0" name="chargeNm" type="xs:string"/>
+<xs:element minOccurs="0" name="colorCd" type="xs:string"/>
+<xs:element minOccurs="0" name="desertionNo" type="xs:string"/>
+<xs:element minOccurs="0" name="filename" type="xs:string"/>
+<xs:element minOccurs="0" name="happenDt" type="xs:string"/>
+<xs:element minOccurs="0" name="happenPlace" type="xs:string"/>
+<xs:element minOccurs="0" name="kindCd" type="xs:string"/>
+<xs:element minOccurs="0" name="neuterYn" type="xs:string"/>
+<xs:element minOccurs="0" name="noticeComment" type="xs:string"/>
+<xs:element minOccurs="0" name="noticeEdt" type="xs:string"/>
+<xs:element minOccurs="0" name="noticeNo" type="xs:string"/>
+<xs:element minOccurs="0" name="noticeSdt" type="xs:string"/>
+<xs:element minOccurs="0" name="officetel" type="xs:string"/>
+<xs:element minOccurs="0" name="orgNm" type="xs:string"/>
+<xs:element minOccurs="0" name="popfile" type="xs:string"/>
+<xs:element minOccurs="0" name="processState" type="xs:string"/>
+<xs:element minOccurs="0" name="sexCd" type="xs:string"/>
+<xs:element minOccurs="0" name="specialMark" type="xs:string"/>
+<xs:element minOccurs="0" name="weight" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getShelterResponse">
+<xs:sequence>
+<xs:element minOccurs="0" ref="header"/>
+<xs:element minOccurs="0" name="body" type="getShelterBody"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getShelterHeader">
+<xs:sequence>
+<xs:element minOccurs="0" name="resultCode" type="xs:string"/>
+<xs:element minOccurs="0" name="resultMsg" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getShelterBody">
+<xs:sequence>
+<xs:element minOccurs="0" name="items">
+<xs:complexType>
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="item" type="getShelterVO"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getShelterVO">
+<xs:sequence>
+<xs:element minOccurs="0" name="careNm" type="xs:string"/>
+<xs:element minOccurs="0" name="careRegNo" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getKindResponse">
+<xs:sequence>
+<xs:element minOccurs="0" ref="header"/>
+<xs:element minOccurs="0" name="body" type="getKindBody"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getKindHeader">
+<xs:sequence>
+<xs:element minOccurs="0" name="resultCode" type="xs:string"/>
+<xs:element minOccurs="0" name="resultMsg" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getKindBody">
+<xs:sequence>
+<xs:element minOccurs="0" name="items">
+<xs:complexType>
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="item" type="getKindVO"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getKindVO">
+<xs:sequence>
+<xs:element minOccurs="0" name="KNm" type="xs:string"/>
+<xs:element minOccurs="0" name="kindCd" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getSidoResponse">
+<xs:sequence>
+<xs:element minOccurs="0" ref="header"/>
+<xs:element minOccurs="0" name="body" type="getSidoBody"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getSidoHeader">
+<xs:sequence>
+<xs:element minOccurs="0" name="resultCode" type="xs:string"/>
+<xs:element minOccurs="0" name="resultMsg" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getSidoBody">
+<xs:sequence>
+<xs:element minOccurs="0" name="items">
+<xs:complexType>
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="item" type="getSidoVO"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element minOccurs="0" name="numOfRows" type="xs:int"/>
+<xs:element minOccurs="0" name="pageNo" type="xs:int"/>
+<xs:element minOccurs="0" name="totalCount" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getSidoVO">
+<xs:sequence>
+<xs:element minOccurs="0" name="orgCd" type="xs:string"/>
+<xs:element minOccurs="0" name="orgdownNm" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+</grammars>
+<resources base="http://openapi.animal.go.kr:80/openapi/service/rest/abandonmentPublicSrvc">
+<resource path="/">
+<resource path="abandonmentPublic">
+<method name="GET">
+<request>
+<param name="bgnde" style="query" type="xs:string"/>
+<param name="endde" style="query" type="xs:string"/>
+<param name="upkind" style="query" type="xs:string"/>
+<param name="kind" style="query" type="xs:string"/>
+<param name="upr_cd" style="query" type="xs:string"/>
+<param name="org_cd" style="query" type="xs:string"/>
+<param name="care_reg_no" style="query" type="xs:string"/>
+<param name="state" style="query" type="xs:string"/>
+<param name="neuter_yn" style="query" type="xs:string"/>
+<param name="pageNo" style="query" default="1" type="xs:int"/>
+<param name="numOfRows" style="query" default="10" type="xs:int"/>
+</request>
+<response>
+<representation mediaType="application/xml"/>
+<representation mediaType="application/json"/>
+</response>
+</method>
+</resource>
+<resource path="kind">
+<method name="GET">
+<request>
+<param name="up_kind_cd" style="query" type="xs:string"/>
+</request>
+<response>
+<representation mediaType="application/xml"/>
+<representation mediaType="application/json"/>
+</response>
+</method>
+</resource>
+<resource path="shelter">
+<method name="GET">
+<request>
+<param name="org_cd" style="query" type="xs:string"/>
+<param name="upr_cd" style="query" type="xs:string"/>
+</request>
+<response>
+<representation mediaType="application/xml"/>
+<representation mediaType="application/json"/>
+</response>
+</method>
+</resource>
+<resource path="sido">
+<method name="GET">
+<request>
+<param name="pageNo" style="query" default="1" type="xs:int"/>
+<param name="numOfRows" style="query" default="10" type="xs:int"/>
+</request>
+<response>
+<representation mediaType="application/xml"/>
+<representation mediaType="application/json"/>
+</response>
+</method>
+</resource>
+<resource path="sigungu">
+<method name="GET">
+<request>
+<param name="upr_cd" style="query" type="xs:string"/>
+</request>
+<response>
+<representation mediaType="application/xml"/>
+<representation mediaType="application/json"/>
+</response>
+</method>
+</resource>
+</resource>
+</resources>
+</application>
