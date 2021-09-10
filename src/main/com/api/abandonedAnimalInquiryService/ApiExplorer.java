@@ -8,7 +8,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 public class ApiExplorer {
-	public static void main(String[] args) throws IOException {
+	
+	ApiExplorer(String ApiUrl) throws IOException {
 		StringBuilder urlBuilder = new StringBuilder(
 				"http://openapi.animal.go.kr/openapi/service/rest/abandonmentPublicSrvc/sido"); /* URL */
 		urlBuilder.append("?" + URLEncoder.encode("ServiceKey", "UTF-8")
