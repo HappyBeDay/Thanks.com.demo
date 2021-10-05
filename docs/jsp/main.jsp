@@ -30,7 +30,9 @@
 </head>
 <body id="page-top">
 	<!-- Navigation 1-->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 mainNav" id="mainNav">
+	<nav
+		class="navbar navbar-expand-lg navbar-light fixed-top py-3 mainNav"
+		id="mainNav">
 		<div class="container px-4 px-lg-5">
 			<a class="navbar-brand" href="#page-top">Thanks.com</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button"
@@ -39,33 +41,35 @@
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-		<div class="">
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<div class="col-auto ms-md-auto order-md-2 d-none d-sm-block">
-				<ul class="navbar-nav ms-auto my-2 my-lg-0"><!-- 여백 더 넓은거: list-unstyled list-inline my-2 -->
-					<li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
-					<li class="nav-item"><a class="nav-link" href="#join">Join</a></li>
-					<li class="nav-item"><a class="nav-link" href="#mypage">My Page</a></li>
-				</ul>
-			</div>
-		</div>
-			<div class="collapse navbar-collapse" >
-				<ul class="navbar-nav ms-auto my-2 my-lg-0">
-					<li class="nav-item"><a class="nav-link" href="#adopt">Adopt</a></li>
-					<li class="nav-item"><a class="nav-link" href="#missing">Missing</a></li>
-					<li class="nav-item"><a class="nav-link" href="#care">Care</a></li>
-					<li class="nav-item"><a class="nav-link" href="#seminar">Seminar</a></li>
-					<li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
-				</ul>
-			</div>
+			<div class="">
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<div class="col-auto ms-md-auto order-md-2 d-none d-sm-block">
+						<ul class="navbar-nav ms-auto my-2 my-lg-0">
+							<!-- 여백 더 넓은거: list-unstyled list-inline my-2 -->
+							<li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+							<li class="nav-item"><a class="nav-link" href="#join">Join</a></li>
+							<li class="nav-item"><a class="nav-link" href="#mypage">My
+									Page</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav ms-auto my-2 my-lg-0">
+						<li class="nav-item"><a class="nav-link" href="#adopt">Adopt</a></li>
+						<li class="nav-item"><a class="nav-link" href="#missing">Missing</a></li>
+						<li class="nav-item"><a class="nav-link" href="#care">Care</a></li>
+						<li class="nav-item"><a class="nav-link" href="#seminar">Seminar</a></li>
+						<li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</nav>
 	<!-- Masthead-->
 	<header class="masthead">
 		<video autoplay muted loop id="myVideo">
-			<source src="/MyThanks.com/assets/video/dogmain.mp4" type="video/mp4">
-		
+			<source src="/Thanks.com/assets/video/dogmain.mp4" type="video/mp4">
+
 		</video>
 		<div class="container px-4 px-lg-5 h-100">
 			<div
@@ -87,7 +91,7 @@
 			<div class="row gx-4 gx-lg-5 justify-content-center">
 				<div class="col-xl-4 col-lg-5">
 					<img class="img-fluid mb-3 mb-lg-0"
-						src="/MyThanks.com/assets/img/intro.png" alt="...">
+						src="/Thanks.com/assets/img/intro.png" alt="...">
 				</div>
 				<div class="col-xl-8 col-lg-7">
 					<h1 class="text-gray mt-0">Thanks.com</h1>

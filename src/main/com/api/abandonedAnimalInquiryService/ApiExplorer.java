@@ -8,6 +8,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 public class ApiExplorer {
+	public ApiExplorer() {}
 	
 	ApiExplorer(String ApiUrl) throws IOException {
 		StringBuilder urlBuilder = new StringBuilder(
@@ -30,7 +31,7 @@ public class ApiExplorer {
 		while ((line = rd.readLine()) != null) {
 			sb.append(line);
 		}
-		new createXML(sb);
+		//new createXML(sb);
 		rd.close();
 		conn.disconnect();
 		System.out.println(sb.toString());
