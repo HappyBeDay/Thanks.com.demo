@@ -2,55 +2,86 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-	<meta name="generator" content="Hugo 0.84.0">
-	<title>Signin Template · Bootstrap v5.0</title>
-	<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
-	<!-- Bootstrap core CSS -->
-	<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-	<style>
-		.bd-placeholder-img {
-		        font-size: 1.125rem;
-		        text-anchor: middle;
-		        -webkit-user-select: none;
-		        -moz-user-select: none;
-		        user-select: none;
-		      }
-		
-		      @media (min-width: 768px) {
-		        .bd-placeholder-img-lg {
-		          font-size: 3.5rem;
-		        }
-		      }
-	</style>
-	<!-- Custom styles for this template -->
- 	<link href="signin.css" rel="stylesheet">
-	<link href="./../css/styles.css" rel="stylesheet" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author"
+	content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.84.0">
+<title>Signin Template · Bootstrap v5.0</title>
+<link rel="canonical"
+	href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+<!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+@media ( min-width : 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+</style>
+<!-- Custom styles for this template -->
+<link href="./../css/styles.css" rel="stylesheet" />
+<link href="signin.css" rel="stylesheet">
 </head>
+<body id="page-top">
+	<header
+		class="navbar navbar-expand-lg navbar-light fixed-top py-3 mainNav"
+		id="mainNav">
+		<div class="container px-4 px-lg-5">
+			<a class="navbar-brand" href="#page-top" style="color:black">Thanks.com</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+				aria-controls="navbarResponsive" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="">
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<div class="col-auto ms-md-auto order-md-2 d-none d-sm-block">
+						<ul class="navbar-nav ms-auto my-2 my-lg-0">
+							<!-- 여백 더 넓은거: list-unstyled list-inline my-2 -->
+							<li class="nav-item"><a class="nav-link" href="#login" style="color:black">Login</a></li>
+							<li class="nav-item"><a class="nav-link" href="#join" style="color:black">Join</a></li>
+						</ul>
+					</div>
+				</div>
+	</header>
+</body>
 
 <body class="text-center">
 	<main class="form-signin">
-		<form>
-			<img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-			<h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-			<div class="form-floating">
-				<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-				<label for="floatingInput">Email address</label>
-			</div>
-			<div class="form-floating">
-				<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-				<label for="floatingPassword">Password</label>
-			</div>
-			<div class="checkbox mb-3">
-				<label>
-					<input type="checkbox" value="remember-me">Remember me</label>
-			</div>
-			<button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-			<p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
-		</form>
+	<form>
+		<h1>
+			<img class="mb-3" src="../assets/img/logo.png" alt width="72"
+				height="60">Sign in
+		</h1>
+		<!-- <h1 class="h3 mb-3 fw-normal">로그인</h1> -->
+		<div class="form-floating">
+			<input type="email" class="form-control" id="floatingInput"
+				placeholder="name@example.com"> <label for="floatingInput">Enter User ID </label>
+		</div>
+		<div class="form-floating">
+			<input type="password" class="form-control" id="floatingPassword"
+				placeholder="Password"> <label for="floatingPassword">Enter User Password </label>
+		</div>
+		<div class="checkbox mb-3">
+			<label> <input type="checkbox" value="remember-me">Remember ID</label>
+		</div>
+		<button class="w-100 btn btn-lg btn-primary" type="submit">Sign
+			in</button>
+		<p class="mt-5 mb-3 text-muted">&copy; Copyright 2021–Thanks.com
+			All rights reserved</p>
+	</form>
 	</main>
 </body>
 
