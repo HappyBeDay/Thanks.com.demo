@@ -3942,12 +3942,22 @@ textarea.form-control-lg {
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+.nav-link1 {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #1c7cff;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
   }
 }
 .nav-link:hover, .nav-link:focus {
+  color: #1c7cff;
+}
+.nav-link1:hover, .nav-link1:focus {
   color: #1c7cff;
 }
 .nav-link.disabled {
@@ -4060,6 +4070,20 @@ textarea.form-control-lg {
   list-style: none;
 }
 .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-nav .dropdown-menu {
+  position: static;
+}
+.navbar-nav1 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-nav1 .nav-link1 {
   padding-right: 0;
   padding-left: 0;
 }
@@ -9587,8 +9611,8 @@ textarea.form-control-lg {
   }
 
   .my-lg-2 {
-    margin-top: 0.5rem !important;
-    margin-bottom: 0.5rem !important;
+    margin-top: 0.38rem !important;
+    margin-bottom: 0.38rem !important;
   }
 
   .my-lg-3 {
@@ -11329,12 +11353,26 @@ hr.divider-light {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   font-size: 0.9rem;
+  padding: 0.8rem 0;
+}
+/*login 메뉴 navbar*/
+#mainNav .navbar-nav1 .nav-item1 .nav-link1 {
+  color: #6c757d;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
+  font-size: 0.65rem;
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
   color: #1c7cff;
 }
+#mainNav .navbar-nav1 .nav-item1 .nav-link1:hover, #mainNav .navbar-nav1 .nav-item1 .nav-link1:active {
+  color: #1c7cff;
+}
 #mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #1c7cff !important;
+}
+#mainNav .navbar-nav1 .nav-item1 .nav-link1:hover {
   color: #1c7cff !important;
 }
 @media (min-width: 992px) {
@@ -11352,10 +11390,20 @@ hr.divider-light {
     color: rgba(255, 255, 255, 0.7);
     padding: 0 1rem;
   }
+  #mainNav .navbar-nav1 .nav-item1 .nav-link1 {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0 0.7rem; /* login 메뉴 상단 좌우 넓이 */
+  }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #fff;
   }
+  #mainNav .navbar-nav1 .nav-item1 .nav-link1:hover {
+    color: #fff;
+  }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+  #mainNav .navbar-nav1 .nav-item1:last-child .nav-link1 {
     padding-right: 0;
   }
   #mainNav.navbar-shrink {
@@ -11387,7 +11435,7 @@ hr.divider-light {
   background-size: cover;
 }  */
 video#myVideo {
-  position:absolute;
+  position:fixed;
   right:0;
   bottom:0;
   width:auto;
@@ -11401,6 +11449,7 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 992px) {
   header.masthead {
+  	height: 100vh;
     min-height: 36.6rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
