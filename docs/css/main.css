@@ -4062,6 +4062,7 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+/* navbar 메뉴 */
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -4076,9 +4077,10 @@ textarea.form-control-lg {
 .navbar-nav .dropdown-menu {
   position: static;
 }
+/* navbar login, join, mypage */
 .navbar-nav1 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -4095,11 +4097,12 @@ textarea.form-control-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-
+/* navbar 화면 줄일때 */
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  flex-direction: column;
 }
 
 .navbar-toggler {
@@ -4146,6 +4149,9 @@ textarea.form-control-lg {
     justify-content: flex-start;
   }
   .navbar-expand-sm .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-sm .navbar-nav1 {
     flex-direction: row;
   }
   .navbar-expand-sm .navbar-nav .dropdown-menu {
@@ -4201,6 +4207,9 @@ textarea.form-control-lg {
   .navbar-expand-md .navbar-nav {
     flex-direction: row;
   }
+  .navbar-expand-md .navbar-nav1 {
+    flex-direction: row;
+  }
   .navbar-expand-md .navbar-nav .dropdown-menu {
     position: absolute;
   }
@@ -4252,6 +4261,9 @@ textarea.form-control-lg {
     justify-content: flex-start;
   }
   .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-nav1 {
     flex-direction: row;
   }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -4307,6 +4319,9 @@ textarea.form-control-lg {
   .navbar-expand-xl .navbar-nav {
     flex-direction: row;
   }
+  .navbar-expand-xl .navbar-nav1 {
+    flex-direction: row;
+  }
   .navbar-expand-xl .navbar-nav .dropdown-menu {
     position: absolute;
   }
@@ -4360,6 +4375,9 @@ textarea.form-control-lg {
   .navbar-expand-xxl .navbar-nav {
     flex-direction: row;
   }
+  .navbar-expand-xxl .navbar-nav1 {
+    flex-direction: row;
+  }
   .navbar-expand-xxl .navbar-nav .dropdown-menu {
     position: absolute;
   }
@@ -4410,6 +4428,9 @@ textarea.form-control-lg {
   justify-content: flex-start;
 }
 .navbar-expand .navbar-nav {
+  flex-direction: row;
+}
+.navbar-expand .navbar-nav1 {
   flex-direction: row;
 }
 .navbar-expand .navbar-nav .dropdown-menu {
@@ -11451,13 +11472,13 @@ hr.divider-light {
 
 /* 반응형일 때 video 화면 표시 */
   header.masthead {
-  padding-top: 22rem;
-  padding-bottom: 14rem;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
 }   
 video#myVideo {
 /* absolute: scroll할때 함께 올라가거나 내려감, 
 fixed: scroll할때 text만 움직이고 video 배경은 가만히 */
-  position:absolute;
+  position:fixed;
   right:0;
   bottom:0;
   width:auto;
@@ -11470,12 +11491,6 @@ header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
 /* 768px 크기일때 하단에 파란색 영역 안 올라오게 크기 조정 */
-@media (min-width: 768px) {
-  header.masthead {
-    padding-top: 22.8rem;
-    padding-bottom: 15.8rem;
-  }
-}
 @media (min-width: 992px) {
   header.masthead {
   	height: 100vh;
